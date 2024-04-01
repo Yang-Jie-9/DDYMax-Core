@@ -12,7 +12,7 @@
     "Yang-Jie-9": "yangjie@pointone.tech"
   },
   "source": {
-    "git": "git@git.yangjie.link:sdk/ddymax-core.git",
+    "git": "https://github.com/Yang-Jie-9/DDYMax-Core.git",
     "tag": "0.1.0"
   },
   "platforms": {
