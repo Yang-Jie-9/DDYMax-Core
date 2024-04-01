@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DDYMax-Core_Example' do
+  pod 'DDYMax-Core', :path => '../'
+  target 'DDYMax-Core_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+
+  end
+end

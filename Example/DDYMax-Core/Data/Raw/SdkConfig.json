@@ -1,0 +1,206 @@
+[
+  {
+    "className": "com.ddy.sdk.TopOnSdk",
+    "appId": "a649050893b338",
+    "appKey": "2a2f5dd4f89eab07902f3de96a0c4139",
+    "enable": false,
+    "adConfig": [
+      {
+        "type": "REWARDED_VIDEO",
+        "adData": [
+          {
+            "adId": "b649050fcdc697"
+          },
+          {
+            "adId": "b649ac874275e7"
+          }
+        ],
+        "alias": "win_coin_rewardvideo"
+      },
+      {
+        "type": "REWARDED_VIDEO",
+        "adData": [
+          {
+            "adId": "b649050fcdc697"
+          },
+          {
+            "adId": "b649ac874275e7"
+          }
+        ],
+        "alias": "fail_add_time_rewardvideo"
+      },
+      {
+        "type": "REWARDED_VIDEO",
+        "adData": [
+          {
+            "adId": "b649050fcdc697"
+          },
+          {
+            "adId": "b649ac874275e7"
+          }
+        ],
+        "alias": "get_hammer_rewardvideo"
+      },
+      {
+        "type": "REWARDED_VIDEO",
+        "adData": [
+          {
+            "adId": "b649050fcdc697"
+          },
+          {
+            "adId": "b649ac874275e7"
+          }
+        ],
+        "alias": "get_refresh_rewardvideo"
+      },
+      {
+        "type": "REWARDED_VIDEO",
+        "adData": [
+          {
+            "adId": "b649050fcdc697"
+          },
+          {
+            "adId": "b649ac874275e7"
+          }
+        ],
+        "alias": "get_discolor_rewardvideo"
+      },
+      {
+        "type": "REWARDED_VIDEO",
+        "adData": [
+          {
+            "adId": "b649050fcdc697"
+          },
+          {
+            "adId": "b649ac874275e7"
+          }
+        ],
+        "alias": "spin_rewardvideo"
+      },
+      {
+        "type": "REWARDED_VIDEO",
+        "adData": [
+          {
+            "adId": "b649050fcdc697"
+          },
+          {
+            "adId": "b649ac874275e7"
+          }
+        ],
+        "alias": "slot_rewardvideo"
+      },
+      {
+        "type": "REWARDED_VIDEO",
+        "adData": [
+          {
+            "adId": "b649050fcdc697"
+          },
+          {
+            "adId": "b649ac874275e7"
+          }
+        ],
+        "alias": "get_time_rewardvideo"
+      },
+      {
+        "type": "INTERSTITIAL",
+        "adData": [
+          {
+            "adId": "b649050ea1542f"
+          },
+          {
+            "adId": "b649ac8641bb4f"
+          }
+        ],
+        "alias": "back_to_bobby_interstitial"
+      },
+      {
+        "type": "INTERSTITIAL",
+        "adData": [
+          {
+            "adId": "b649050ea1542f"
+          },
+          {
+            "adId": "b649ac8641bb4f"
+          }
+        ],
+        "alias": "back_to_app_interstitial"
+      },
+      {
+        "type": "SPLASH",
+        "adData": [
+          {
+            "adId": "b649112fbd8c88"
+          }
+        ],
+        "alias": "app_open"
+      }
+    ]
+  },
+  {
+    "className": "com.ddy.sdk.AdjustSdk",
+    "appToken": "rzbddgx2rx1c",
+    "enable": false
+  },
+  {
+    "className": "com.ddy.sdk.AwSdk",
+    "enable": false,
+    "payConfig": [
+      {
+        "id": "iap_101",
+        "name": "一些钻石_0.99",
+        "price": "8.00",
+        "priceUsd": "0.99",
+        "priceUnit": "USD",
+        "alias": "iap_101"
+      }
+    ],
+    "adConfig": [
+      {
+        "type": "REWARDED_VIDEO",
+        "adData": [
+          {
+            "adId": "default"
+          }
+        ],
+        "alias": "default"
+      }
+    ]
+  },
+  {
+    "className": "com.ddy.sdk.UnitySdk",
+    "enable": true
+  },
+  {
+    "className": "com.ddy.sdk.SSSdk",
+    "enable": true,
+    "adConfig": [
+      {
+        "type": "REWARD_VIDEO",
+        "adData": [
+          {
+            "adId": "ca-app-pub-3940256099942544/1712485313"
+          }
+        ],
+        "alias": "default"
+      }
+    ],
+    "payConfig": [
+      {
+        "id": "iap_101",
+        "type": 0,
+        "alias": "Some Gems"
+      }]
+  },
+  {
+    "className": "com.ddy.sdk.AppsflyerSdk",
+    "enable": false,
+    "appId": "6461418276",
+    "appKey": "vKD4h5RfQnuCxd3uGMvAaE"
+  },
+  {
+    "className": "com.ddy.sdk.ThinkingDataSdk",
+    "enable": false,
+    "appId": "6461418276",
+    "serverUrl": "https://global-receiver-ta.thinkingdata.cn"
+  }
+]

@@ -1,0 +1,32 @@
+PODS:
+  - DDYMax-Core (0.1.0):
+    - DDYMax-JSONModel
+  - DDYMax-JSONModel (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - DDYMax-Core (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - DDYMax-JSONModel
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  DDYMax-Core:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DDYMax-Core: d133f5472a4433837d4c0e441c0c2b3204984a8c
+  DDYMax-JSONModel: fce0a9d0e0e2c4e3e4519c7695bf6843edfe2e47
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 9fef3d450ae06b6bebeaa9457dbeef0c67f8788c
+
+COCOAPODS: 1.15.2

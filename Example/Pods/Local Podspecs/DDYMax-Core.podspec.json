@@ -1,0 +1,27 @@
+{
+  "name": "DDYMax-Core",
+  "version": "0.1.0",
+  "summary": "A short description of DDYMax-Core.",
+  "description": "DDYMax-Core",
+  "homepage": "https://github.com/Yang-Jie-9/DDYMax-Core",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Yang-Jie-9": "yangjie@pointone.tech"
+  },
+  "source": {
+    "git": "git@git.yangjie.link:sdk/ddymax-core.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DDYMax-Core/Classes/**/*",
+  "dependencies": {
+    "DDYMax-JSONModel": [
+
+    ]
+  }
+}

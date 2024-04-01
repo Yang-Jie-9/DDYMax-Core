@@ -1,0 +1,6 @@
+framework module DDYMax_JSONModel {
+  umbrella header "DDYMax-JSONModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

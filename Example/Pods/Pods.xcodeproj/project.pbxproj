@@ -1,0 +1,1471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FC86E731C543EF220D74F4522E20412 /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E4C8A4CB1F1CDAACBCCAA1A7C8AEED /* JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		130FF7F283E1C82FCDD89EBC801B4DD3 /* DDYMax-JSONModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F09BC4DCD6C0333C98D447F2DB5CFAB /* DDYMax-JSONModel-dummy.m */; };
+		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A8D7AFA8520B017FCECDCA6810C61CB /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20E3CFFDAAB21D79D76B61CFB2E2E25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		282A9CA966D4A663F59D770AD5E4C7F9 /* PayCallBackDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF649BAFE12CD353856B8D3C5DF4812 /* PayCallBackDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0623690A6F2B265F1C6C4F4090F41327 /* SwiftSupport.swift */; };
+		2B7B3A382E4E37858730A127FE4170C3 /* BasePayInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE17FD8E3B397E9DB4594AA2D017A71 /* BasePayInfo.m */; };
+		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AA9DD097C094FA261DAFC1E937EA82B7 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DC5640EBF3036CE1676612A14BB51E /* UIImage+Snapshot.m */; };
+		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 384CF51984FE27F205E74F49AE565FD3 /* FBSnapshotTestCasePlatform.m */; };
+		3266A77A8503A1C63C984AD7C6EBD011 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A724AB2A571B773B709B6C028A2F79 /* JSONHTTPClient.m */; };
+		33340D3AB9AF6AF4E656BBC4F4D347E5 /* AdCallBackDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 52EBA784FC59E89DCFFCB69ADD224EDB /* AdCallBackDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37190BFB330788DB5B763A6EC9579399 /* Pods-DDYMax-Core_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A14B8BB88950A26494CF74FA4ED69E73 /* Pods-DDYMax-Core_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F7DEAF0343E53AFBE93175288B19C0 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		37E1023B110CF412ACC6A023C9EC519A /* BaseAdData.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6935C5A866C899E5D7AF2EB5AEC6D5 /* BaseAdData.m */; };
+		3B608D99A7A10C42C688B7DEF885A792 /* DDYMax-Core-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F2ABA919D15A3CE128FF3BBA786DEF /* DDYMax-Core-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CD2AC4BB1858BA590701DEB819E0044 /* BaseAdData.h in Headers */ = {isa = PBXBuildFile; fileRef = 727D0391DD8404706EB54E4B1EA58ABF /* BaseAdData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DAA4B0C9F2DF7DE82BF09202D102CF6 /* Pods-DDYMax-Core_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F06718DD283E618F4B15E7E252322A76 /* Pods-DDYMax-Core_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		405F44D6EB975AC34DFB0B537723195E /* Pods-DDYMax-Core_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D37CC865CB013D1B00C6B1A06965DF /* Pods-DDYMax-Core_Example-dummy.m */; };
+		43F98C5E003D575E1B53F525B414636D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		44527A31E6DC4E0CA880C1EE936C0240 /* Pods-DDYMax-Core_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6A6CE3D8F5EDCD537FF5CA0657C441 /* Pods-DDYMax-Core_Tests-dummy.m */; };
+		48E80E1FC6A34AB2C48A9EFBC8688A64 /* DeviceCallBackDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 274D558F55917B2FE873FD46F3DE6147 /* DeviceCallBackDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B8DA377611EDF0050CFE173B80019AC /* BaseSdkConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 865B30CDE7CD4137C3475BEEB63E6C87 /* BaseSdkConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CF88142BCA1C0AF72A75091314DC7F1 /* BaseSdkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FB3BF09C525763FA6F694C2EAFBD55 /* BaseSdkConfig.m */; };
+		4D57366B9370AB5F383E0158579301C1 /* AdDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FB3EF87602F0D90AF4CE1BBE3AA283 /* AdDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F9A9EE6EB84AA7FBC9A55623A2951A4 /* JSONModel.modulemap in Sources */ = {isa = PBXBuildFile; fileRef = F1D65BAB78F6332A8721534D83A4F0BA /* JSONModel.modulemap */; };
+		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC2947BD6B1CF9D2AE73D4407F67B5F /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56D8D89B7555BB0D2C914A2694C66029 /* BaseSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = DD871CEA0E32F024168D914E1D900A6F /* BaseSdk.m */; };
+		5723A17D14B231299DB2F1A62CABF075 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B69233A3FB548E3FFA05AC1155A24585 /* JSONKeyMapper.m */; };
+		5781C7A355C09D84AA994B0E9DAAD9A7 /* DDYMax.h in Headers */ = {isa = PBXBuildFile; fileRef = 70CB0F6A5BDA91C3FF1C20FADEC117F6 /* DDYMax.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B73E96BD41FF797B3E74A6217B34DA5 /* DDYMax.m in Sources */ = {isa = PBXBuildFile; fileRef = 8067B114C8884A53D09A0D0C768EF87C /* DDYMax.m */; };
+		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E211A2EF1DFA6096EBF5C1DDE433118 /* FBSnapshotTestCase-dummy.m */; };
+		5CC24C0F45AC4AA762CD0F997705D0C2 /* DDYMax-Core-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE71DAB9BCB608F61EAFD12ECA352063 /* DDYMax-Core-dummy.m */; };
+		60FA4C1DBC652565E260E051745ECD61 /* CoreLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 13A5CA7C52D5B0933942EF20DFE6846D /* CoreLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62E91A3805A7C32B4154049E27CBB027 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = D9DBAC5D7A3DE2151F472AC624FEAB10 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = DDD3F45E428026C65A3E95489546A744 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6A11CD1C5F12B11286EEA21E9449F870 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 10556586C5303234B020DAE26D22411A /* JSONModelClassProperty.m */; };
+		6AA5D39650D041442A43B5C3BFB4A6CD /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1F50A23E557F3E304205835B20259D /* JSONKeyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ACEBA240F35D687F8F13653BCD4C9DC /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 24263FDE920F728E2DC3E79E16133FD5 /* JSONModelClassProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEAC739B8E11260D5CB8A4C02641566 /* UIApplication+StrictKeyWindow.m */; };
+		746F6ECA088BE7C21014BFD276BAE53B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E7028276A7653CE9C2AAFCDA98988698 /* FBSnapshotTestCase.m */; };
+		7C827FB986AB53BCEDDF0BD4B3E57D4B /* BasePayParams.m in Sources */ = {isa = PBXBuildFile; fileRef = AD85A663A6165845224F4509FDAA8B69 /* BasePayParams.m */; };
+		86DF211BF7BFB218283635D3220DF2CB /* PayDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 810436D84578E38B59ECBA3BB6DEE223 /* PayDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
+		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = BE235BE82DB3E68906CA2EE2BB20B3A8 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8D62BA4F492B98D79B5175AF09F252F2 /* BaseAdParams.h in Headers */ = {isa = PBXBuildFile; fileRef = 36240F4ADD544A5ED8B0E64E8FC56BBA /* BaseAdParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90F45192783B4A1D7E3B95659C4518CE /* RoleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0935CB586BE2A46EAE0F96553873C731 /* RoleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
+		9D9E10B4A04362498AD16839AFB27B43 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2906553525766874AB45F1B043A9AFCD /* JSONAPI.m */; };
+		9EB2B3C18B1BFC14C837AA826543867D /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = B2F04D438E90CF1E0ACFD789A69D40D9 /* JSONAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EDCDD80E50863A2BF51454EFED647FE /* BaseAdParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1495886AE1FD4AF1A1D76FFB57E0A3 /* BaseAdParams.m */; };
+		9F8A2410C190C0F753E35FBF8D27B509 /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F67C1BB066A954095CABE3EFABF62F /* JSONModelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A046DA7E160BFDC3FD00906C7EBEEFBB /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CC62A69F6C7E0E2D22F775874402FAD7 /* JSONHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5B49C6131F6B9F04148B48284BD3947 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9328FEA8775429CEF7ADAC00065A9934 /* JSONModelError.m */; };
+		AD4C4A575BC249735E9E89AE7ACAAE68 /* LoginDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E4EA38C92251E76D6D8E966491B904D /* LoginDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0CCB090A55FC33F6D809D7D76566298 /* BasePayParams.h in Headers */ = {isa = PBXBuildFile; fileRef = EC0726CB1503B91A52D6A22B440A601B /* BasePayParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B29892014B1DA6C20973DCBF0F7DF96C /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE40DE9187DE2ABB88E4B2966D1BFED /* JSONValueTransformer.m */; };
+		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B79878C174EFECE9FBF90005207AAF /* UIImage+Compare.m */; };
+		BAB96075C37B78F6B6481A65A861584E /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B218F892F8B53159F482B06BB02BB36 /* JSONModelError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1F32A80D2254FA10477A4982EC75D3B /* EventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 638814996BA65A172B48BB949C53F1EC /* EventDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65143FE8D0801438151BE3556FC9588D /* FBSnapshotTestController.m */; };
+		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
+		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F9B92C232552A67FB439446CC0E311 /* UIImage+Diff.m */; };
+		D0DE1FA81B4D9797E8B8FDA7A4C46238 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45428F134B14FDCD67AFBF7696B95C83 /* JSONModel.m */; };
+		D37CB7D7029733EDEC4118B21D5CED48 /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AEE055831EE96ABD251C4645CA6A3C7 /* JSONValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEBD7E1533830442387B61862AE3879A /* BaseAdInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3616EFB8180A5069F6E40CF394358B61 /* BaseAdInfo.m */; };
+		E294C1185D97F3CD2A28E273C83CDDC3 /* AdStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 6887155005D31E401A50FF8F13C8FB37 /* AdStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E314F81859A2C8FEA4D0341606CE18AA /* BasePayInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 82E0642C008DB3777C41774B1A6089FA /* BasePayInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7634B091086259FF9D006F307B96E4E /* LoginCallBackDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 34473DA6023A69B47A71A97C829F4FD0 /* LoginCallBackDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E826B8008DFF852A5818B61758958CBE /* JSONModel+networking.h in Headers */ = {isa = PBXBuildFile; fileRef = FC358D057E2058C7039E774FC15BF968 /* JSONModel+networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE6D58818E1B246D4A7503AD7FBE9AE5 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = F01B5CB1FF6456D867D9AAB25529549C /* JSONModel+networking.m */; };
+		FB657B4423614B3FA5ECDCFF3DB0E221 /* BaseAdInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9635F184C96F3F64AA49D3C18194BDCF /* BaseAdInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBC25F72059D9AA96374C549ECC93406 /* DDYMax-JSONModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC2A272BA7BC8FE1F5E074ED0D5DF81 /* DDYMax-JSONModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDEF48941EA01041F05DEC9D80248751 /* BaseSdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 39061A5A6D76058352FC170CBF2F86A2 /* BaseSdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A6F604948D4F315DA1541CC7D1B71D /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C9DFA534275A3C85CB02CA879602A51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F61139512FC86FB749CC0B46966EC3F;
+			remoteInfo = "DDYMax-JSONModel";
+		};
+		3343B31D9BA2C9C5AF7E1AD70B72A93C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79AC6101248F8038DD5AF38BE5F8EB76;
+			remoteInfo = "Pods-DDYMax-Core_Example";
+		};
+		37D40FF4B13A5684264DD0378628FB69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F61139512FC86FB749CC0B46966EC3F;
+			remoteInfo = "DDYMax-JSONModel";
+		};
+		BDCF7A66A1E7D71A2AE868420E1F801D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C21BC0B1F19E849E7C2E9F8C89DABCC;
+			remoteInfo = "DDYMax-Core";
+		};
+		FD48B2844B99FCD2A47B62302A0237AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A724AB2A571B773B709B6C028A2F79 /* JSONHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONHTTPClient.m; path = "DDYMax-JSONModel/Classes/JSONModelNetworking/JSONHTTPClient.m"; sourceTree = "<group>"; };
+		012F033EA01D079F8684750166F6976F /* Pods-DDYMax-Core_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DDYMax-Core_Tests"; path = Pods_DDYMax_Core_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E4C8A4CB1F1CDAACBCCAA1A7C8AEED /* JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = "DDYMax-JSONModel/Classes/JSONModel/JSONModel.h"; sourceTree = "<group>"; };
+		0623690A6F2B265F1C6C4F4090F41327 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		0935CB586BE2A46EAE0F96553873C731 /* RoleDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RoleDelegate.h; sourceTree = "<group>"; };
+		0AEE055831EE96ABD251C4645CA6A3C7 /* JSONValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONValueTransformer.h; path = "DDYMax-JSONModel/Classes/JSONModelTransformations/JSONValueTransformer.h"; sourceTree = "<group>"; };
+		0B6A6CE3D8F5EDCD537FF5CA0657C441 /* Pods-DDYMax-Core_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDYMax-Core_Tests-dummy.m"; sourceTree = "<group>"; };
+		0E48D0A14AB2BD0D645864A0DC4D18E2 /* Pods-DDYMax-Core_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDYMax-Core_Tests.modulemap"; sourceTree = "<group>"; };
+		0E4EA38C92251E76D6D8E966491B904D /* LoginDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LoginDelegate.h; sourceTree = "<group>"; };
+		10556586C5303234B020DAE26D22411A /* JSONModelClassProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelClassProperty.m; path = "DDYMax-JSONModel/Classes/JSONModel/JSONModelClassProperty.m"; sourceTree = "<group>"; };
+		13A5CA7C52D5B0933942EF20DFE6846D /* CoreLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreLib.h; path = "DDYMax-Core/Classes/CoreLib.h"; sourceTree = "<group>"; };
+		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1FAFF51F4AE4897A7CBE369472FF94A6 /* DDYMax-Core.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DDYMax-Core.debug.xcconfig"; sourceTree = "<group>"; };
+		2120C5DC8C9DB9EE6234652C3B8E6F27 /* Pods-DDYMax-Core_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDYMax-Core_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		21F2ABA919D15A3CE128FF3BBA786DEF /* DDYMax-Core-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDYMax-Core-umbrella.h"; sourceTree = "<group>"; };
+		24263FDE920F728E2DC3E79E16133FD5 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelClassProperty.h; path = "DDYMax-JSONModel/Classes/JSONModel/JSONModelClassProperty.h"; sourceTree = "<group>"; };
+		274D558F55917B2FE873FD46F3DE6147 /* DeviceCallBackDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DeviceCallBackDelegate.h; sourceTree = "<group>"; };
+		2906553525766874AB45F1B043A9AFCD /* JSONAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONAPI.m; path = "DDYMax-JSONModel/Classes/JSONModelNetworking/JSONAPI.m"; sourceTree = "<group>"; };
+		2B1495886AE1FD4AF1A1D76FFB57E0A3 /* BaseAdParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseAdParams.m; sourceTree = "<group>"; };
+		2C742A6082AB587B05E064C0EA24D0BE /* DDYMax-Core */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "DDYMax-Core"; path = DDYMax_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EBA537EA15E65E66F1EFE22EF54D68D /* Pods-DDYMax-Core_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDYMax-Core_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		30B8181870FB700BF97926931E4CE75D /* Pods-DDYMax-Core_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DDYMax-Core_Example"; path = Pods_DDYMax_Core_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3125A56CDB14F614F2FF3E7FC4D8A1AE /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		34473DA6023A69B47A71A97C829F4FD0 /* LoginCallBackDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LoginCallBackDelegate.h; sourceTree = "<group>"; };
+		34E68F58E8BA62DCA1841F30AB27BD86 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		3616EFB8180A5069F6E40CF394358B61 /* BaseAdInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseAdInfo.m; sourceTree = "<group>"; };
+		36240F4ADD544A5ED8B0E64E8FC56BBA /* BaseAdParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseAdParams.h; sourceTree = "<group>"; };
+		384CF51984FE27F205E74F49AE565FD3 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		39061A5A6D76058352FC170CBF2F86A2 /* BaseSdk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseSdk.h; sourceTree = "<group>"; };
+		3B38A6DA3152734A17217951FC1A0932 /* DDYMax-JSONModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "DDYMax-JSONModel.modulemap"; sourceTree = "<group>"; };
+		3F249705CEAD8D538C133CCDC7DC2C32 /* DDYMax-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DDYMax-Core.release.xcconfig"; sourceTree = "<group>"; };
+		4084A2C7D7B28F16056C2F5916B18E70 /* Pods-DDYMax-Core_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDYMax-Core_Example.release.xcconfig"; sourceTree = "<group>"; };
+		45428F134B14FDCD67AFBF7696B95C83 /* JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = "DDYMax-JSONModel/Classes/JSONModel/JSONModel.m"; sourceTree = "<group>"; };
+		4A8D7AFA8520B017FCECDCA6810C61CB /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		4DAE74E94EFEF4F738761723DA3E9C27 /* DDYMax-Core-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDYMax-Core-Info.plist"; sourceTree = "<group>"; };
+		4E211A2EF1DFA6096EBF5C1DDE433118 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		519882C0F809F3EED8DE80337274778D /* DDYMax-JSONModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DDYMax-JSONModel.release.xcconfig"; sourceTree = "<group>"; };
+		52EBA784FC59E89DCFFCB69ADD224EDB /* AdCallBackDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdCallBackDelegate.h; sourceTree = "<group>"; };
+		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		59DC5640EBF3036CE1676612A14BB51E /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		5A18E7CCF8372C45E6172C23BBA638F8 /* Pods-DDYMax-Core_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDYMax-Core_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B218F892F8B53159F482B06BB02BB36 /* JSONModelError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = "DDYMax-JSONModel/Classes/JSONModel/JSONModelError.h"; sourceTree = "<group>"; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DEC9D4C2231C8A9E599292ED0C69B13 /* Pods-DDYMax-Core_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDYMax-Core_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5ECB9BE7EE522224A43500151016BD7A /* Pods-DDYMax-Core_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDYMax-Core_Example-Info.plist"; sourceTree = "<group>"; };
+		5FE17FD8E3B397E9DB4594AA2D017A71 /* BasePayInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BasePayInfo.m; sourceTree = "<group>"; };
+		62A6F604948D4F315DA1541CC7D1B71D /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		638814996BA65A172B48BB949C53F1EC /* EventDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EventDelegate.h; sourceTree = "<group>"; };
+		65143FE8D0801438151BE3556FC9588D /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		6742EF6C01DA4A14C74FA4169C9DD378 /* DDYMax-JSONModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDYMax-JSONModel-prefix.pch"; sourceTree = "<group>"; };
+		6887155005D31E401A50FF8F13C8FB37 /* AdStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdStatus.h; sourceTree = "<group>"; };
+		69481539BDC766CA84A9BCCC181E294C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6DF649BAFE12CD353856B8D3C5DF4812 /* PayCallBackDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PayCallBackDelegate.h; sourceTree = "<group>"; };
+		70CB0F6A5BDA91C3FF1C20FADEC117F6 /* DDYMax.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDYMax.h; path = "DDYMax-Core/Classes/DDYMax.h"; sourceTree = "<group>"; };
+		71A64F524702D1ED3B43771D85CC8612 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		71E791656FDB4AB2C467ACF14C772413 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		727D0391DD8404706EB54E4B1EA58ABF /* BaseAdData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseAdData.h; sourceTree = "<group>"; };
+		7B1F50A23E557F3E304205835B20259D /* JSONKeyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONKeyMapper.h; path = "DDYMax-JSONModel/Classes/JSONModelTransformations/JSONKeyMapper.h"; sourceTree = "<group>"; };
+		7D3AEAA3EF2D53D6C61F318D3654D967 /* DDYMax-JSONModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DDYMax-JSONModel.debug.xcconfig"; sourceTree = "<group>"; };
+		7F09BC4DCD6C0333C98D447F2DB5CFAB /* DDYMax-JSONModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDYMax-JSONModel-dummy.m"; sourceTree = "<group>"; };
+		8067B114C8884A53D09A0D0C768EF87C /* DDYMax.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDYMax.m; path = "DDYMax-Core/Classes/DDYMax.m"; sourceTree = "<group>"; };
+		810436D84578E38B59ECBA3BB6DEE223 /* PayDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PayDelegate.h; sourceTree = "<group>"; };
+		821759C1627461CC91ABA3237CEAC342 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		82E0642C008DB3777C41774B1A6089FA /* BasePayInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BasePayInfo.h; sourceTree = "<group>"; };
+		83B176F510A90FECC006E31A1790D435 /* DDYMax-JSONModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DDYMax-JSONModel-Info.plist"; sourceTree = "<group>"; };
+		85F9B92C232552A67FB439446CC0E311 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		865B30CDE7CD4137C3475BEEB63E6C87 /* BaseSdkConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseSdkConfig.h; sourceTree = "<group>"; };
+		87FB3BF09C525763FA6F694C2EAFBD55 /* BaseSdkConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseSdkConfig.m; sourceTree = "<group>"; };
+		8F9605ECBCE5852757CE50CAB15042E0 /* Pods-DDYMax-Core_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DDYMax-Core_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		90EEE71FAFE8C6A6577924A311C47100 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		9328FEA8775429CEF7ADAC00065A9934 /* JSONModelError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelError.m; path = "DDYMax-JSONModel/Classes/JSONModel/JSONModelError.m"; sourceTree = "<group>"; };
+		9635F184C96F3F64AA49D3C18194BDCF /* BaseAdInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaseAdInfo.h; sourceTree = "<group>"; };
+		97AB67D962CA8467B29A74AAC5EB06FF /* Pods-DDYMax-Core_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DDYMax-Core_Example-frameworks.sh"; sourceTree = "<group>"; };
+		99F67C1BB066A954095CABE3EFABF62F /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = "DDYMax-JSONModel/Classes/JSONModelLib.h"; sourceTree = "<group>"; };
+		9BEAC739B8E11260D5CB8A4C02641566 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		9CAF5CC576560D6C64E1362F256A8E5C /* Pods-DDYMax-Core_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDYMax-Core_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A00A4713347DA19BBCB8B1AC5D114EC8 /* DDYMax-Core-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDYMax-Core-prefix.pch"; sourceTree = "<group>"; };
+		A14B8BB88950A26494CF74FA4ED69E73 /* Pods-DDYMax-Core_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDYMax-Core_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A523B4D79F6A807ADD1469C527C96649 /* Pods-DDYMax-Core_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DDYMax-Core_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AA9DD097C094FA261DAFC1E937EA82B7 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		AD85A663A6165845224F4509FDAA8B69 /* BasePayParams.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BasePayParams.m; sourceTree = "<group>"; };
+		AF6935C5A866C899E5D7AF2EB5AEC6D5 /* BaseAdData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseAdData.m; sourceTree = "<group>"; };
+		B257AC36BEA386C7CF92CD0636B7B712 /* DDYMax-Core.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "DDYMax-Core.modulemap"; sourceTree = "<group>"; };
+		B2F04D438E90CF1E0ACFD789A69D40D9 /* JSONAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONAPI.h; path = "DDYMax-JSONModel/Classes/JSONModelNetworking/JSONAPI.h"; sourceTree = "<group>"; };
+		B3B79878C174EFECE9FBF90005207AAF /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		B69233A3FB548E3FFA05AC1155A24585 /* JSONKeyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONKeyMapper.m; path = "DDYMax-JSONModel/Classes/JSONModelTransformations/JSONKeyMapper.m"; sourceTree = "<group>"; };
+		BDE40DE9187DE2ABB88E4B2966D1BFED /* JSONValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONValueTransformer.m; path = "DDYMax-JSONModel/Classes/JSONModelTransformations/JSONValueTransformer.m"; sourceTree = "<group>"; };
+		BE235BE82DB3E68906CA2EE2BB20B3A8 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		C0FB3EF87602F0D90AF4CE1BBE3AA283 /* AdDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AdDelegate.h; sourceTree = "<group>"; };
+		C2D62C63E4F261107152A690E57ECD38 /* Pods-DDYMax-Core_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DDYMax-Core_Example.modulemap"; sourceTree = "<group>"; };
+		C3F7DEAF0343E53AFBE93175288B19C0 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		CC62A69F6C7E0E2D22F775874402FAD7 /* JSONHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONHTTPClient.h; path = "DDYMax-JSONModel/Classes/JSONModelNetworking/JSONHTTPClient.h"; sourceTree = "<group>"; };
+		D0D37CC865CB013D1B00C6B1A06965DF /* Pods-DDYMax-Core_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DDYMax-Core_Example-dummy.m"; sourceTree = "<group>"; };
+		D19E9C76757BEBF240D04EB7E2817CB7 /* DDYMax-JSONModel */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "DDYMax-JSONModel"; path = DDYMax_JSONModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DBAC5D7A3DE2151F472AC624FEAB10 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		DD871CEA0E32F024168D914E1D900A6F /* BaseSdk.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BaseSdk.m; sourceTree = "<group>"; };
+		DDD3F45E428026C65A3E95489546A744 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E7028276A7653CE9C2AAFCDA98988698 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		E918B02C1AC9A17F8A064CBA9E11E104 /* Pods-DDYMax-Core_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDYMax-Core_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		EC0726CB1503B91A52D6A22B440A601B /* BasePayParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BasePayParams.h; sourceTree = "<group>"; };
+		ECC2947BD6B1CF9D2AE73D4407F67B5F /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		EE71DAB9BCB608F61EAFD12ECA352063 /* DDYMax-Core-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DDYMax-Core-dummy.m"; sourceTree = "<group>"; };
+		EEC2A272BA7BC8FE1F5E074ED0D5DF81 /* DDYMax-JSONModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DDYMax-JSONModel-umbrella.h"; sourceTree = "<group>"; };
+		F01B5CB1FF6456D867D9AAB25529549C /* JSONModel+networking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "JSONModel+networking.m"; path = "DDYMax-JSONModel/Classes/JSONModelNetworking/JSONModel+networking.m"; sourceTree = "<group>"; };
+		F06718DD283E618F4B15E7E252322A76 /* Pods-DDYMax-Core_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DDYMax-Core_Example-umbrella.h"; sourceTree = "<group>"; };
+		F1D65BAB78F6332A8721534D83A4F0BA /* JSONModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = JSONModel.modulemap; path = "DDYMax-JSONModel/Classes/JSONModel.modulemap"; sourceTree = "<group>"; };
+		F7020A4C1F733D2DA170DB374EDE8741 /* DDYMax-Core.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "DDYMax-Core.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FC358D057E2058C7039E774FC15BF968 /* JSONModel+networking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JSONModel+networking.h"; path = "DDYMax-JSONModel/Classes/JSONModelNetworking/JSONModel+networking.h"; sourceTree = "<group>"; };
+		FF1DBB2D355F1982B9B93318206B6832 /* Pods-DDYMax-Core_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DDYMax-Core_Tests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FEC764D33DE1E583DEFBC46F6712A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				746F6ECA088BE7C21014BFD276BAE53B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		490D493675E166CE60BB9D2F17A9155B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62E91A3805A7C32B4154049E27CBB027 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D8A47570ABDC324F9236F0F1FD49E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E3CFFDAAB21D79D76B61CFB2E2E25C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A5A68853703D9D2F67534F2E356902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F98C5E003D575E1B53F525B414636D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B880388FF17A336FBF90E30E537508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */,
+				C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */,
+				875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */,
+				9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0379C322745BD415898C7707722A8ED5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				39061A5A6D76058352FC170CBF2F86A2 /* BaseSdk.h */,
+				DD871CEA0E32F024168D914E1D900A6F /* BaseSdk.m */,
+				865B30CDE7CD4137C3475BEEB63E6C87 /* BaseSdkConfig.h */,
+				87FB3BF09C525763FA6F694C2EAFBD55 /* BaseSdkConfig.m */,
+			);
+			name = Base;
+			path = "DDYMax-Core/Classes/Base";
+			sourceTree = "<group>";
+		};
+		13639ECC84A71E22574670CA374B6488 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3125A56CDB14F614F2FF3E7FC4D8A1AE /* FBSnapshotTestCase.modulemap */,
+				4E211A2EF1DFA6096EBF5C1DDE433118 /* FBSnapshotTestCase-dummy.m */,
+				71E791656FDB4AB2C467ACF14C772413 /* FBSnapshotTestCase-Info.plist */,
+				71A64F524702D1ED3B43771D85CC8612 /* FBSnapshotTestCase-prefix.pch */,
+				4A8D7AFA8520B017FCECDCA6810C61CB /* FBSnapshotTestCase-umbrella.h */,
+				90EEE71FAFE8C6A6577924A311C47100 /* FBSnapshotTestCase.debug.xcconfig */,
+				34E68F58E8BA62DCA1841F30AB27BD86 /* FBSnapshotTestCase.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		1BE168048FEC0ADFEC8C3DC0A1DC02C3 /* Pods-DDYMax-Core_Example */ = {
+			isa = PBXGroup;
+			children = (
+				C2D62C63E4F261107152A690E57ECD38 /* Pods-DDYMax-Core_Example.modulemap */,
+				A523B4D79F6A807ADD1469C527C96649 /* Pods-DDYMax-Core_Example-acknowledgements.markdown */,
+				E918B02C1AC9A17F8A064CBA9E11E104 /* Pods-DDYMax-Core_Example-acknowledgements.plist */,
+				D0D37CC865CB013D1B00C6B1A06965DF /* Pods-DDYMax-Core_Example-dummy.m */,
+				97AB67D962CA8467B29A74AAC5EB06FF /* Pods-DDYMax-Core_Example-frameworks.sh */,
+				5ECB9BE7EE522224A43500151016BD7A /* Pods-DDYMax-Core_Example-Info.plist */,
+				F06718DD283E618F4B15E7E252322A76 /* Pods-DDYMax-Core_Example-umbrella.h */,
+				8F9605ECBCE5852757CE50CAB15042E0 /* Pods-DDYMax-Core_Example.debug.xcconfig */,
+				4084A2C7D7B28F16056C2F5916B18E70 /* Pods-DDYMax-Core_Example.release.xcconfig */,
+			);
+			name = "Pods-DDYMax-Core_Example";
+			path = "Target Support Files/Pods-DDYMax-Core_Example";
+			sourceTree = "<group>";
+		};
+		1E6E898844D87F525B615A714C928F7C /* DDYMax-JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				B2F04D438E90CF1E0ACFD789A69D40D9 /* JSONAPI.h */,
+				2906553525766874AB45F1B043A9AFCD /* JSONAPI.m */,
+				CC62A69F6C7E0E2D22F775874402FAD7 /* JSONHTTPClient.h */,
+				00A724AB2A571B773B709B6C028A2F79 /* JSONHTTPClient.m */,
+				7B1F50A23E557F3E304205835B20259D /* JSONKeyMapper.h */,
+				B69233A3FB548E3FFA05AC1155A24585 /* JSONKeyMapper.m */,
+				05E4C8A4CB1F1CDAACBCCAA1A7C8AEED /* JSONModel.h */,
+				45428F134B14FDCD67AFBF7696B95C83 /* JSONModel.m */,
+				F1D65BAB78F6332A8721534D83A4F0BA /* JSONModel.modulemap */,
+				FC358D057E2058C7039E774FC15BF968 /* JSONModel+networking.h */,
+				F01B5CB1FF6456D867D9AAB25529549C /* JSONModel+networking.m */,
+				24263FDE920F728E2DC3E79E16133FD5 /* JSONModelClassProperty.h */,
+				10556586C5303234B020DAE26D22411A /* JSONModelClassProperty.m */,
+				5B218F892F8B53159F482B06BB02BB36 /* JSONModelError.h */,
+				9328FEA8775429CEF7ADAC00065A9934 /* JSONModelError.m */,
+				99F67C1BB066A954095CABE3EFABF62F /* JSONModelLib.h */,
+				0AEE055831EE96ABD251C4645CA6A3C7 /* JSONValueTransformer.h */,
+				BDE40DE9187DE2ABB88E4B2966D1BFED /* JSONValueTransformer.m */,
+				7CBEDFE4FE489ABD9005E1F784146E16 /* Support Files */,
+			);
+			name = "DDYMax-JSONModel";
+			path = "DDYMax-JSONModel";
+			sourceTree = "<group>";
+		};
+		390C03EC8DB76F8F5F2BCB563E61632D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6473FBF5E62F5297DD843EBF56A93EC9 /* DDYMax-Core */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4B8E19D8DEC43FD4A3DE807DFB204ADB /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				274D558F55917B2FE873FD46F3DE6147 /* DeviceCallBackDelegate.h */,
+			);
+			name = Device;
+			path = "DDYMax-Core/Classes/Device";
+			sourceTree = "<group>";
+		};
+		624F25C1839CE3432E714E538F2D25BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E6E898844D87F525B615A714C928F7C /* DDYMax-JSONModel */,
+				FE5D293BCF6DF0EFBFF660CC0280C6A9 /* FBSnapshotTestCase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6473FBF5E62F5297DD843EBF56A93EC9 /* DDYMax-Core */ = {
+			isa = PBXGroup;
+			children = (
+				13A5CA7C52D5B0933942EF20DFE6846D /* CoreLib.h */,
+				70CB0F6A5BDA91C3FF1C20FADEC117F6 /* DDYMax.h */,
+				8067B114C8884A53D09A0D0C768EF87C /* DDYMax.m */,
+				FE93DC820EE6C8198462A8A52B84A5F7 /* Ad */,
+				0379C322745BD415898C7707722A8ED5 /* Base */,
+				4B8E19D8DEC43FD4A3DE807DFB204ADB /* Device */,
+				BAD566A77FB1CDFC0796E808FED0486E /* Event */,
+				6BDF718AAADC048C9655D70FB8A16935 /* Login */,
+				CBED5904794328968A1BDBBEFC9D2F1E /* Pay */,
+				B3650C631680C02886BC25B78B2921CA /* Pod */,
+				9AB54C77A3C199BE460CE11BA149CC6E /* Role */,
+				9A0AFE8890E477E10A9CFF19551BDDFC /* Support Files */,
+			);
+			name = "DDYMax-Core";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6995525559DF6405CD994580866EE600 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				0623690A6F2B265F1C6C4F4090F41327 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		6BDF718AAADC048C9655D70FB8A16935 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				34473DA6023A69B47A71A97C829F4FD0 /* LoginCallBackDelegate.h */,
+				0E4EA38C92251E76D6D8E966491B904D /* LoginDelegate.h */,
+			);
+			name = Login;
+			path = "DDYMax-Core/Classes/Login";
+			sourceTree = "<group>";
+		};
+		7CBEDFE4FE489ABD9005E1F784146E16 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B38A6DA3152734A17217951FC1A0932 /* DDYMax-JSONModel.modulemap */,
+				7F09BC4DCD6C0333C98D447F2DB5CFAB /* DDYMax-JSONModel-dummy.m */,
+				83B176F510A90FECC006E31A1790D435 /* DDYMax-JSONModel-Info.plist */,
+				6742EF6C01DA4A14C74FA4169C9DD378 /* DDYMax-JSONModel-prefix.pch */,
+				EEC2A272BA7BC8FE1F5E074ED0D5DF81 /* DDYMax-JSONModel-umbrella.h */,
+				7D3AEAA3EF2D53D6C61F318D3654D967 /* DDYMax-JSONModel.debug.xcconfig */,
+				519882C0F809F3EED8DE80337274778D /* DDYMax-JSONModel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DDYMax-JSONModel";
+			sourceTree = "<group>";
+		};
+		80CB4C9788E7494AE8C9AA15D8A3EB7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C742A6082AB587B05E064C0EA24D0BE /* DDYMax-Core */,
+				D19E9C76757BEBF240D04EB7E2817CB7 /* DDYMax-JSONModel */,
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */,
+				30B8181870FB700BF97926931E4CE75D /* Pods-DDYMax-Core_Example */,
+				012F033EA01D079F8684750166F6976F /* Pods-DDYMax-Core_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88196348539CF17BA8E5356F900583DD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				62A6F604948D4F315DA1541CC7D1B71D /* FBSnapshotTestCase.h */,
+				E7028276A7653CE9C2AAFCDA98988698 /* FBSnapshotTestCase.m */,
+				D9DBAC5D7A3DE2151F472AC624FEAB10 /* FBSnapshotTestCasePlatform.h */,
+				384CF51984FE27F205E74F49AE565FD3 /* FBSnapshotTestCasePlatform.m */,
+				AA9DD097C094FA261DAFC1E937EA82B7 /* FBSnapshotTestController.h */,
+				65143FE8D0801438151BE3556FC9588D /* FBSnapshotTestController.m */,
+				ECC2947BD6B1CF9D2AE73D4407F67B5F /* UIApplication+StrictKeyWindow.h */,
+				9BEAC739B8E11260D5CB8A4C02641566 /* UIApplication+StrictKeyWindow.m */,
+				BE235BE82DB3E68906CA2EE2BB20B3A8 /* UIImage+Compare.h */,
+				B3B79878C174EFECE9FBF90005207AAF /* UIImage+Compare.m */,
+				DDD3F45E428026C65A3E95489546A744 /* UIImage+Diff.h */,
+				85F9B92C232552A67FB439446CC0E311 /* UIImage+Diff.m */,
+				C3F7DEAF0343E53AFBE93175288B19C0 /* UIImage+Snapshot.h */,
+				59DC5640EBF3036CE1676612A14BB51E /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9A0AFE8890E477E10A9CFF19551BDDFC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B257AC36BEA386C7CF92CD0636B7B712 /* DDYMax-Core.modulemap */,
+				EE71DAB9BCB608F61EAFD12ECA352063 /* DDYMax-Core-dummy.m */,
+				4DAE74E94EFEF4F738761723DA3E9C27 /* DDYMax-Core-Info.plist */,
+				A00A4713347DA19BBCB8B1AC5D114EC8 /* DDYMax-Core-prefix.pch */,
+				21F2ABA919D15A3CE128FF3BBA786DEF /* DDYMax-Core-umbrella.h */,
+				1FAFF51F4AE4897A7CBE369472FF94A6 /* DDYMax-Core.debug.xcconfig */,
+				3F249705CEAD8D538C133CCDC7DC2C32 /* DDYMax-Core.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DDYMax-Core";
+			sourceTree = "<group>";
+		};
+		9AB54C77A3C199BE460CE11BA149CC6E /* Role */ = {
+			isa = PBXGroup;
+			children = (
+				0935CB586BE2A46EAE0F96553873C731 /* RoleDelegate.h */,
+			);
+			name = Role;
+			path = "DDYMax-Core/Classes/Role";
+			sourceTree = "<group>";
+		};
+		B3650C631680C02886BC25B78B2921CA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F7020A4C1F733D2DA170DB374EDE8741 /* DDYMax-Core.podspec */,
+				69481539BDC766CA84A9BCCC181E294C /* LICENSE */,
+				821759C1627461CC91ABA3237CEAC342 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAD566A77FB1CDFC0796E808FED0486E /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				638814996BA65A172B48BB949C53F1EC /* EventDelegate.h */,
+			);
+			name = Event;
+			path = "DDYMax-Core/Classes/Event";
+			sourceTree = "<group>";
+		};
+		CBED5904794328968A1BDBBEFC9D2F1E /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				82E0642C008DB3777C41774B1A6089FA /* BasePayInfo.h */,
+				5FE17FD8E3B397E9DB4594AA2D017A71 /* BasePayInfo.m */,
+				EC0726CB1503B91A52D6A22B440A601B /* BasePayParams.h */,
+				AD85A663A6165845224F4509FDAA8B69 /* BasePayParams.m */,
+				6DF649BAFE12CD353856B8D3C5DF4812 /* PayCallBackDelegate.h */,
+				810436D84578E38B59ECBA3BB6DEE223 /* PayDelegate.h */,
+			);
+			name = Pay;
+			path = "DDYMax-Core/Classes/Pay";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				390C03EC8DB76F8F5F2BCB563E61632D /* Development Pods */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				624F25C1839CE3432E714E538F2D25BA /* Pods */,
+				80CB4C9788E7494AE8C9AA15D8A3EB7A /* Products */,
+				F391AD5C5EBFF75759BE9B111BAFBEE8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DAF36EF49418A1697A1E46EB1FD07840 /* Pods-DDYMax-Core_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0E48D0A14AB2BD0D645864A0DC4D18E2 /* Pods-DDYMax-Core_Tests.modulemap */,
+				2120C5DC8C9DB9EE6234652C3B8E6F27 /* Pods-DDYMax-Core_Tests-acknowledgements.markdown */,
+				9CAF5CC576560D6C64E1362F256A8E5C /* Pods-DDYMax-Core_Tests-acknowledgements.plist */,
+				0B6A6CE3D8F5EDCD537FF5CA0657C441 /* Pods-DDYMax-Core_Tests-dummy.m */,
+				2EBA537EA15E65E66F1EFE22EF54D68D /* Pods-DDYMax-Core_Tests-frameworks.sh */,
+				FF1DBB2D355F1982B9B93318206B6832 /* Pods-DDYMax-Core_Tests-Info.plist */,
+				A14B8BB88950A26494CF74FA4ED69E73 /* Pods-DDYMax-Core_Tests-umbrella.h */,
+				5A18E7CCF8372C45E6172C23BBA638F8 /* Pods-DDYMax-Core_Tests.debug.xcconfig */,
+				5DEC9D4C2231C8A9E599292ED0C69B13 /* Pods-DDYMax-Core_Tests.release.xcconfig */,
+			);
+			name = "Pods-DDYMax-Core_Tests";
+			path = "Target Support Files/Pods-DDYMax-Core_Tests";
+			sourceTree = "<group>";
+		};
+		F391AD5C5EBFF75759BE9B111BAFBEE8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BE168048FEC0ADFEC8C3DC0A1DC02C3 /* Pods-DDYMax-Core_Example */,
+				DAF36EF49418A1697A1E46EB1FD07840 /* Pods-DDYMax-Core_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */,
+				3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */,
+				1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */,
+				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FE5D293BCF6DF0EFBFF660CC0280C6A9 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				88196348539CF17BA8E5356F900583DD /* Core */,
+				13639ECC84A71E22574670CA374B6488 /* Support Files */,
+				6995525559DF6405CD994580866EE600 /* SwiftSupport */,
+			);
+			name = FBSnapshotTestCase;
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		FE93DC820EE6C8198462A8A52B84A5F7 /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				52EBA784FC59E89DCFFCB69ADD224EDB /* AdCallBackDelegate.h */,
+				C0FB3EF87602F0D90AF4CE1BBE3AA283 /* AdDelegate.h */,
+				6887155005D31E401A50FF8F13C8FB37 /* AdStatus.h */,
+				727D0391DD8404706EB54E4B1EA58ABF /* BaseAdData.h */,
+				AF6935C5A866C899E5D7AF2EB5AEC6D5 /* BaseAdData.m */,
+				9635F184C96F3F64AA49D3C18194BDCF /* BaseAdInfo.h */,
+				3616EFB8180A5069F6E40CF394358B61 /* BaseAdInfo.m */,
+				36240F4ADD544A5ED8B0E64E8FC56BBA /* BaseAdParams.h */,
+				2B1495886AE1FD4AF1A1D76FFB57E0A3 /* BaseAdParams.m */,
+			);
+			name = Ad;
+			path = "DDYMax-Core/Classes/Ad";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		28C60642602CAC9D83C025AB7C9A875C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37190BFB330788DB5B763A6EC9579399 /* Pods-DDYMax-Core_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5694C325D8D4FCF7463ED91EEE7B94BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33340D3AB9AF6AF4E656BBC4F4D347E5 /* AdCallBackDelegate.h in Headers */,
+				4D57366B9370AB5F383E0158579301C1 /* AdDelegate.h in Headers */,
+				E294C1185D97F3CD2A28E273C83CDDC3 /* AdStatus.h in Headers */,
+				3CD2AC4BB1858BA590701DEB819E0044 /* BaseAdData.h in Headers */,
+				FB657B4423614B3FA5ECDCFF3DB0E221 /* BaseAdInfo.h in Headers */,
+				8D62BA4F492B98D79B5175AF09F252F2 /* BaseAdParams.h in Headers */,
+				E314F81859A2C8FEA4D0341606CE18AA /* BasePayInfo.h in Headers */,
+				B0CCB090A55FC33F6D809D7D76566298 /* BasePayParams.h in Headers */,
+				FDEF48941EA01041F05DEC9D80248751 /* BaseSdk.h in Headers */,
+				4B8DA377611EDF0050CFE173B80019AC /* BaseSdkConfig.h in Headers */,
+				60FA4C1DBC652565E260E051745ECD61 /* CoreLib.h in Headers */,
+				5781C7A355C09D84AA994B0E9DAAD9A7 /* DDYMax.h in Headers */,
+				3B608D99A7A10C42C688B7DEF885A792 /* DDYMax-Core-umbrella.h in Headers */,
+				48E80E1FC6A34AB2C48A9EFBC8688A64 /* DeviceCallBackDelegate.h in Headers */,
+				C1F32A80D2254FA10477A4982EC75D3B /* EventDelegate.h in Headers */,
+				E7634B091086259FF9D006F307B96E4E /* LoginCallBackDelegate.h in Headers */,
+				AD4C4A575BC249735E9E89AE7ACAAE68 /* LoginDelegate.h in Headers */,
+				282A9CA966D4A663F59D770AD5E4C7F9 /* PayCallBackDelegate.h in Headers */,
+				86DF211BF7BFB218283635D3220DF2CB /* PayDelegate.h in Headers */,
+				90F45192783B4A1D7E3B95659C4518CE /* RoleDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		642DE00ADBEEA20F1F340991E8457EB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAA4B0C9F2DF7DE82BF09202D102CF6 /* Pods-DDYMax-Core_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CF7A53AFE8275DDE075747E8245F97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */,
+				1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */,
+				2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */,
+				5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */,
+				8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */,
+				67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */,
+				373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2D5F857F9FF9B094773BBA0B491537B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC25F72059D9AA96374C549ECC93406 /* DDYMax-JSONModel-umbrella.h in Headers */,
+				9EB2B3C18B1BFC14C837AA826543867D /* JSONAPI.h in Headers */,
+				A046DA7E160BFDC3FD00906C7EBEEFBB /* JSONHTTPClient.h in Headers */,
+				6AA5D39650D041442A43B5C3BFB4A6CD /* JSONKeyMapper.h in Headers */,
+				0FC86E731C543EF220D74F4522E20412 /* JSONModel.h in Headers */,
+				E826B8008DFF852A5818B61758958CBE /* JSONModel+networking.h in Headers */,
+				6ACEBA240F35D687F8F13653BCD4C9DC /* JSONModelClassProperty.h in Headers */,
+				BAB96075C37B78F6B6481A65A861584E /* JSONModelError.h in Headers */,
+				9F8A2410C190C0F753E35FBF8D27B509 /* JSONModelLib.h in Headers */,
+				D37CB7D7029733EDEC4118B21D5CED48 /* JSONValueTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F61139512FC86FB749CC0B46966EC3F /* DDYMax-JSONModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 224310F86CAEFEEC7F9DF90441D7BEEA /* Build configuration list for PBXNativeTarget "DDYMax-JSONModel" */;
+			buildPhases = (
+				E2D5F857F9FF9B094773BBA0B491537B /* Headers */,
+				DC533150D14CDA44A9661EF643C80F9D /* Sources */,
+				B4A5A68853703D9D2F67534F2E356902 /* Frameworks */,
+				E2A9DDEEEAAB338903E897357B98A747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DDYMax-JSONModel";
+			productName = DDYMax_JSONModel;
+			productReference = D19E9C76757BEBF240D04EB7E2817CB7 /* DDYMax-JSONModel */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C21BC0B1F19E849E7C2E9F8C89DABCC /* DDYMax-Core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73CFBDD0B6ABBB41C0F882937893800D /* Build configuration list for PBXNativeTarget "DDYMax-Core" */;
+			buildPhases = (
+				5694C325D8D4FCF7463ED91EEE7B94BD /* Headers */,
+				EA4B1D08D8A7E1B1A707AC87B7DB9AD8 /* Sources */,
+				490D493675E166CE60BB9D2F17A9155B /* Frameworks */,
+				2EEED58CB85BEB6FD161ECBE3358B079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B57C6C5B24693B9C70ACBD83980B7BC1 /* PBXTargetDependency */,
+			);
+			name = "DDYMax-Core";
+			productName = DDYMax_Core;
+			productReference = 2C742A6082AB587B05E064C0EA24D0BE /* DDYMax-Core */;
+			productType = "com.apple.product-type.framework";
+		};
+		79AC6101248F8038DD5AF38BE5F8EB76 /* Pods-DDYMax-Core_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 992B5896F6BAD95EB091C53E0D848793 /* Build configuration list for PBXNativeTarget "Pods-DDYMax-Core_Example" */;
+			buildPhases = (
+				642DE00ADBEEA20F1F340991E8457EB0 /* Headers */,
+				43F44E3865518F9F4E03CB72C44E3263 /* Sources */,
+				1FEC764D33DE1E583DEFBC46F6712A5E /* Frameworks */,
+				7F099779AFC471383F65C88FEB25BD58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9D577A7E1AB3F77802E58D7C2A7FFCC /* PBXTargetDependency */,
+				0B182B6309D0A60860E136C38D477D16 /* PBXTargetDependency */,
+			);
+			name = "Pods-DDYMax-Core_Example";
+			productName = Pods_DDYMax_Core_Example;
+			productReference = 30B8181870FB700BF97926931E4CE75D /* Pods-DDYMax-Core_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D98A39067B4F9AA8031E9AE0DD9B5F4 /* Pods-DDYMax-Core_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFDABC813156FE6F07485EDC3C1EFE5 /* Build configuration list for PBXNativeTarget "Pods-DDYMax-Core_Tests" */;
+			buildPhases = (
+				28C60642602CAC9D83C025AB7C9A875C /* Headers */,
+				DE78DFC49CE15277A0A0A84A1642DDD6 /* Sources */,
+				6D8A47570ABDC324F9236F0F1FD49E6F /* Frameworks */,
+				FC5D01F9CB7AC0D29BE89F57A3DDC9D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39580694485F2D23E6C957214A9BBCF5 /* PBXTargetDependency */,
+				4F4E0FDD947C6E066F98B30BC4441924 /* PBXTargetDependency */,
+			);
+			name = "Pods-DDYMax-Core_Tests";
+			productName = Pods_DDYMax_Core_Tests;
+			productReference = 012F033EA01D079F8684750166F6976F /* Pods-DDYMax-Core_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				D4CF7A53AFE8275DDE075747E8245F97 /* Headers */,
+				EE210BFC37CDBA0645C09C3819F41723 /* Sources */,
+				E3B880388FF17A336FBF90E30E537508 /* Frameworks */,
+				194C9DCC4899F62F4FB7DDF15C987499 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 80CB4C9788E7494AE8C9AA15D8A3EB7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C21BC0B1F19E849E7C2E9F8C89DABCC /* DDYMax-Core */,
+				1F61139512FC86FB749CC0B46966EC3F /* DDYMax-JSONModel */,
+				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
+				79AC6101248F8038DD5AF38BE5F8EB76 /* Pods-DDYMax-Core_Example */,
+				7D98A39067B4F9AA8031E9AE0DD9B5F4 /* Pods-DDYMax-Core_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		194C9DCC4899F62F4FB7DDF15C987499 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EEED58CB85BEB6FD161ECBE3358B079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F099779AFC471383F65C88FEB25BD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2A9DDEEEAAB338903E897357B98A747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC5D01F9CB7AC0D29BE89F57A3DDC9D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43F44E3865518F9F4E03CB72C44E3263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				405F44D6EB975AC34DFB0B537723195E /* Pods-DDYMax-Core_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC533150D14CDA44A9661EF643C80F9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				130FF7F283E1C82FCDD89EBC801B4DD3 /* DDYMax-JSONModel-dummy.m in Sources */,
+				9D9E10B4A04362498AD16839AFB27B43 /* JSONAPI.m in Sources */,
+				3266A77A8503A1C63C984AD7C6EBD011 /* JSONHTTPClient.m in Sources */,
+				5723A17D14B231299DB2F1A62CABF075 /* JSONKeyMapper.m in Sources */,
+				D0DE1FA81B4D9797E8B8FDA7A4C46238 /* JSONModel.m in Sources */,
+				4F9A9EE6EB84AA7FBC9A55623A2951A4 /* JSONModel.modulemap in Sources */,
+				EE6D58818E1B246D4A7503AD7FBE9AE5 /* JSONModel+networking.m in Sources */,
+				6A11CD1C5F12B11286EEA21E9449F870 /* JSONModelClassProperty.m in Sources */,
+				A5B49C6131F6B9F04148B48284BD3947 /* JSONModelError.m in Sources */,
+				B29892014B1DA6C20973DCBF0F7DF96C /* JSONValueTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE78DFC49CE15277A0A0A84A1642DDD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44527A31E6DC4E0CA880C1EE936C0240 /* Pods-DDYMax-Core_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA4B1D08D8A7E1B1A707AC87B7DB9AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E1023B110CF412ACC6A023C9EC519A /* BaseAdData.m in Sources */,
+				DEBD7E1533830442387B61862AE3879A /* BaseAdInfo.m in Sources */,
+				9EDCDD80E50863A2BF51454EFED647FE /* BaseAdParams.m in Sources */,
+				2B7B3A382E4E37858730A127FE4170C3 /* BasePayInfo.m in Sources */,
+				7C827FB986AB53BCEDDF0BD4B3E57D4B /* BasePayParams.m in Sources */,
+				56D8D89B7555BB0D2C914A2694C66029 /* BaseSdk.m in Sources */,
+				4CF88142BCA1C0AF72A75091314DC7F1 /* BaseSdkConfig.m in Sources */,
+				5B73E96BD41FF797B3E74A6217B34DA5 /* DDYMax.m in Sources */,
+				5CC24C0F45AC4AA762CD0F997705D0C2 /* DDYMax-Core-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE210BFC37CDBA0645C09C3819F41723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */,
+				5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */,
+				30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */,
+				C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */,
+				2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */,
+				74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */,
+				B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */,
+				CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */,
+				2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B182B6309D0A60860E136C38D477D16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DDYMax-JSONModel";
+			target = 1F61139512FC86FB749CC0B46966EC3F /* DDYMax-JSONModel */;
+			targetProxy = 37D40FF4B13A5684264DD0378628FB69 /* PBXContainerItemProxy */;
+		};
+		39580694485F2D23E6C957214A9BBCF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = FD48B2844B99FCD2A47B62302A0237AA /* PBXContainerItemProxy */;
+		};
+		4F4E0FDD947C6E066F98B30BC4441924 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DDYMax-Core_Example";
+			target = 79AC6101248F8038DD5AF38BE5F8EB76 /* Pods-DDYMax-Core_Example */;
+			targetProxy = 3343B31D9BA2C9C5AF7E1AD70B72A93C /* PBXContainerItemProxy */;
+		};
+		B57C6C5B24693B9C70ACBD83980B7BC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DDYMax-JSONModel";
+			target = 1F61139512FC86FB749CC0B46966EC3F /* DDYMax-JSONModel */;
+			targetProxy = 1C9DFA534275A3C85CB02CA879602A51 /* PBXContainerItemProxy */;
+		};
+		F9D577A7E1AB3F77802E58D7C2A7FFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "DDYMax-Core";
+			target = 2C21BC0B1F19E849E7C2E9F8C89DABCC /* DDYMax-Core */;
+			targetProxy = BDCF7A66A1E7D71A2AE868420E1F801D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CF977E736A9F0297ED689DCD07C3E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E68F58E8BA62DCA1841F30AB27BD86 /* FBSnapshotTestCase.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2175FA1583568100E575DDFAC0D6CC69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DEC9D4C2231C8A9E599292ED0C69B13 /* Pods-DDYMax-Core_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDYMax-Core_Tests/Pods-DDYMax-Core_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDYMax-Core_Tests/Pods-DDYMax-Core_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5BA63DAB9589FBE977A85C0D43FE6DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4084A2C7D7B28F16056C2F5916B18E70 /* Pods-DDYMax-Core_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDYMax-Core_Example/Pods-DDYMax-Core_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDYMax-Core_Example/Pods-DDYMax-Core_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		72F74E265066CD084023B2FAEF2A0E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A18E7CCF8372C45E6172C23BBA638F8 /* Pods-DDYMax-Core_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDYMax-Core_Tests/Pods-DDYMax-Core_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDYMax-Core_Tests/Pods-DDYMax-Core_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90EEE71FAFE8C6A6577924A311C47100 /* FBSnapshotTestCase.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98D550DCB6B38F851FD95F547C1EF30A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F249705CEAD8D538C133CCDC7DC2C32 /* DDYMax-Core.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DDYMax-Core/DDYMax-Core-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DDYMax-Core/DDYMax-Core-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DDYMax-Core/DDYMax-Core.modulemap";
+				PRODUCT_MODULE_NAME = DDYMax_Core;
+				PRODUCT_NAME = DDYMax_Core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A2E1AC587DD39283FAF024A3F916CEFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 519882C0F809F3EED8DE80337274778D /* DDYMax-JSONModel.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DDYMax-JSONModel/DDYMax-JSONModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DDYMax-JSONModel/DDYMax-JSONModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DDYMax-JSONModel/DDYMax-JSONModel.modulemap";
+				PRODUCT_MODULE_NAME = DDYMax_JSONModel;
+				PRODUCT_NAME = DDYMax_JSONModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6A16E35AD28A7DA2CA319C47FFD678B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FAFF51F4AE4897A7CBE369472FF94A6 /* DDYMax-Core.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DDYMax-Core/DDYMax-Core-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DDYMax-Core/DDYMax-Core-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DDYMax-Core/DDYMax-Core.modulemap";
+				PRODUCT_MODULE_NAME = DDYMax_Core;
+				PRODUCT_NAME = DDYMax_Core;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D04932135D8F24AFEEFB18C67E911441 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9605ECBCE5852757CE50CAB15042E0 /* Pods-DDYMax-Core_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DDYMax-Core_Example/Pods-DDYMax-Core_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DDYMax-Core_Example/Pods-DDYMax-Core_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DC56BED95D7DC42A92F440884483032B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D3AEAA3EF2D53D6C61F318D3654D967 /* DDYMax-JSONModel.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DDYMax-JSONModel/DDYMax-JSONModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DDYMax-JSONModel/DDYMax-JSONModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DDYMax-JSONModel/DDYMax-JSONModel.modulemap";
+				PRODUCT_MODULE_NAME = DDYMax_JSONModel;
+				PRODUCT_NAME = DDYMax_JSONModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		224310F86CAEFEEC7F9DF90441D7BEEA /* Build configuration list for PBXNativeTarget "DDYMax-JSONModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC56BED95D7DC42A92F440884483032B /* Debug */,
+				A2E1AC587DD39283FAF024A3F916CEFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */,
+				0CF977E736A9F0297ED689DCD07C3E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CFDABC813156FE6F07485EDC3C1EFE5 /* Build configuration list for PBXNativeTarget "Pods-DDYMax-Core_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72F74E265066CD084023B2FAEF2A0E3D /* Debug */,
+				2175FA1583568100E575DDFAC0D6CC69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73CFBDD0B6ABBB41C0F882937893800D /* Build configuration list for PBXNativeTarget "DDYMax-Core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6A16E35AD28A7DA2CA319C47FFD678B /* Debug */,
+				98D550DCB6B38F851FD95F547C1EF30A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		992B5896F6BAD95EB091C53E0D848793 /* Build configuration list for PBXNativeTarget "Pods-DDYMax-Core_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D04932135D8F24AFEEFB18C67E911441 /* Debug */,
+				5BA63DAB9589FBE977A85C0D43FE6DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

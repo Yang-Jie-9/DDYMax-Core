@@ -1,0 +1,6 @@
+framework module DDYMax_Core {
+  umbrella header "DDYMax-Core-umbrella.h"
+
+  export *
+  module * { export * }
+}
