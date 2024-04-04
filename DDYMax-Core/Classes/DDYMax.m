@@ -13,17 +13,14 @@
 #import <AppTrackingTransparency/AppTrackingTransparency.h>
 #import <StoreKit/StoreKit.h>
 
-NSMutableArray<BaseSdk*>* sdks;
-UIViewController* viewController;
-id<AdCallBackDelegate> adCallBackDelegate;
-id<PayCallBackDelegate> payCallBackDelegate;
-id<LoginCallBackDelegate> loginCallBackDelegate;
-id<DeviceCallBackDelegate> deviceCallBackDelegate;
-
 
 static DDYMax* instance;
 
-@implementation DDYMax
+@implementation DDYMax {
+    UIViewController* viewController;
+    NSMutableArray<BaseSdk*>* sdks;
+    
+}
 
 - (instancetype)init
 {
@@ -40,7 +37,6 @@ static DDYMax* instance;
 
 // 初始化配置
 - (void)initConfig {
-    
     sdks = [NSMutableArray arrayWithCapacity:5];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"SdkConfig" ofType:@"json" inDirectory:@"Data/Raw"];
     if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
@@ -129,12 +125,12 @@ static DDYMax* instance;
             }
         }
     }
-    if (!isShowed && adCallBackDelegate != nil) {
-        [adCallBackDelegate onAdFailed:@"" info:@"{}" err:@"无可以展示的广告"];
+    if (!isShowed && self.adCallBack != nil) {
+        [self.adCallBack onAdFailed:@"" info:@"{}" err:@"无可以展示的广告"];
     }
 }
 
-- (void)login:(NSString*)type {
+- (void)login:(nonnull NSString *)type andArgs:(nullable NSString *)args {
     BaseSdk<LoginDelegate> * defaultLoginSdk = nil;
     bool isLogged = false;
     for (BaseSdk* tmpSdk in sdks) {
@@ -144,16 +140,21 @@ static DDYMax* instance;
                 defaultLoginSdk = loginDelegate;
             }
             if ([[loginDelegate getType] isEqualToString:type]) {
-                [loginDelegate login];
+                [loginDelegate login:nil];
                 isLogged = true;
             }
         }
     }
     if (!isLogged && defaultLoginSdk != nil) {
-        [defaultLoginSdk login];
-    } else if(!isLogged && defaultLoginSdk == nil && loginCallBackDelegate != nil) {
-        [loginCallBackDelegate onLoginFailed:type err:@"无可以登陆的SDK"];
+        [defaultLoginSdk login: nil];
+    } else if(!isLogged && defaultLoginSdk == nil && self.loginCallBack != nil) {
+        [self.loginCallBack onLoginFailed:type err:@"无可以登陆的SDK"];
     }
+}
+
+
+- (void)login:(NSString*)type {
+    [self login:type andArgs:nil];
 }
 
 - (void)logout:(NSString*)type {
@@ -173,12 +174,10 @@ static DDYMax* instance;
     }
     if (!isLogged && defaultLoginSdk != nil) {
         [defaultLoginSdk logout];
-    } else if(!isLogged && defaultLoginSdk == nil && loginCallBackDelegate != nil) {
-        [loginCallBackDelegate onLogout:type err:@"无可以登出的SDK"];
+    } else if(!isLogged && defaultLoginSdk == nil && self.loginCallBack != nil) {
+        [self.loginCallBack onLogout:type err:@"无可以登出的SDK"];
     }
 }
-
-
 
 - (void)pay:(NSString*)args {
     bool isPaid = false;
@@ -197,8 +196,8 @@ static DDYMax* instance;
             }
         }
     }
-    if (!isPaid && payCallBackDelegate) {
-        [payCallBackDelegate onPayFail:basePayParams.alias err:@"无可以支付的SDK"];
+    if (!isPaid && self.payCallBack) {
+        [self.payCallBack onPayFail:basePayParams.alias err:@"无可以支付的SDK"];
     }
 }
 
@@ -279,25 +278,24 @@ static DDYMax* instance;
         [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
             if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
                 NSString* uuid = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-                if (deviceCallBackDelegate != nil) {
-                    [deviceCallBackDelegate onGetDevice:uuid];
+                if (self.deviceCallBack != nil) {
+                    [self.deviceCallBack onGetDevice:uuid];
                 }
             } else {
-                if (deviceCallBackDelegate != nil) {
-                    [deviceCallBackDelegate onGetDevice:@""];
+                if (self.deviceCallBack != nil) {
+                    [self.deviceCallBack onGetDevice:@""];
                 }
             }
         }];
     } else {
-        NSLog(@"UUID null");
         if ([[ASIdentifierManager sharedManager] isAdvertisingTrackingEnabled]) {
             NSString* uuid = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
-            if (deviceCallBackDelegate != nil) {
-                [deviceCallBackDelegate onGetDevice:uuid];
+            if (self.deviceCallBack != nil) {
+                [self.deviceCallBack onGetDevice:uuid];
             }
         } else {
-            if (deviceCallBackDelegate != nil) {
-                [deviceCallBackDelegate onGetDevice:@""];
+            if (self.deviceCallBack != nil) {
+                [self.deviceCallBack onGetDevice:@""];
             }
         }
     }
@@ -386,7 +384,6 @@ static DDYMax* instance;
 }
 
 - (void)continueUserActivity: (NSNotification*)notification {
-    
     NSDictionary* notifData = notification.userInfo;
     NSUserActivity * userActivity = [notifData objectForKey:@"userActivity"];
     for (BaseSdk* tmpSdk in sdks) {
@@ -416,5 +413,6 @@ static DDYMax* instance;
     }) ;
     return instance ;
 }
+
 
 @end

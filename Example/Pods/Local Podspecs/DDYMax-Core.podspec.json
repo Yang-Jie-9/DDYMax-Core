@@ -19,6 +19,8 @@
     "ios": "10.0"
   },
   "source_files": "DDYMax-Core/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": "StoreKit",
   "dependencies": {
     "DDYMax-JSONModel": [
 

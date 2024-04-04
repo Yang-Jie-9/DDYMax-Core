@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol LoginDelegate <NSObject>
--(void) login;
+-(void) login: (nullable NSString*)args;
 -(void) logout;
 
 @end

@@ -45,8 +45,25 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSMutableArray<BaseSdk*>*)getSdks;
 - (UIViewController*) getViewController;
 
+
 - (void)login:(NSString*)type;
+- (void)login:(NSString*)type andArgs: (nullable NSString*)args;
 - (void)logout:(NSString*)type;
+
+- (void)showAd:(NSString*)args;
+
+- (void)pay:(NSString*)args;
+- (void)getPurchaseList;
+- (void)consume:(NSString*)args;
+- (void)vibrate:(NSString*) milliseconds;
+
+- (void)review;
+- (void)getDeviceId;
+- (void)getReferrer;
+
+-(void)trigger:(NSDictionary*)args;
+- (void)level:(NSDictionary*)args;
+
 
 @property(nonatomic) id<AdCallBackDelegate> adCallBack;
 @property(nonatomic) id<PayCallBackDelegate> payCallBack;
