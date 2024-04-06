@@ -393,10 +393,17 @@ static DDYMax* instance;
 
 
 - (UIViewController *)getViewController {
+    if (viewController != nil) {
+        UIWindow* window = [[UIApplication sharedApplication] delegate].window;
+        if (window != nil) {
+            viewController = window.rootViewController;
+        }
+    }
     return viewController;
 }
 
 - (void)setViewController:(UIViewController*)controller {
+
     viewController = controller;
 }
 
